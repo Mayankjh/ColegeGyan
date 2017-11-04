@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>blah</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script language="javascript">\
+function addone() {
+function subtractone(field) {
+field.value = Number(field.value) + 1;
+}
+}
+
+$(document).ready(function() {
+    $("input").one("click", function(){
+    addone();
+
+
+});
+});
+
+
+</script>
+</head>
+<body>
+<form name="myform">
+<!--input type="submit" onclick="this.disabled = true" value="Save" -->
+<input type="text" name="myfield" value="0" size="5" readonly="readonly"><br>
+<input type="text" name="myfield1" value="0" size="5" readonly="readonly"><br>
+<input type="button" value="Like! " name="like" id="like"  >
+<input type="button" value="Unlike!" onclick="subtractone(myfield1);"><br>
+</form>
+</body>
+</html>
