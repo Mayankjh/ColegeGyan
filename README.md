@@ -86,9 +86,9 @@ These instructions will get you a copy of the project up and running on your loc
         -Open cmd/terminal 
             >mongod --dbpath="Directory of mongodb databases"
         -Open another cmd window/terminal
-            >node serverstart.js
+            >node index.js
         -Open browser and in address bar type:
-            localhost:1234
+            localhost:4200
 
     Yay! the application is ready
 
